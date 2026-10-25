@@ -15,28 +15,20 @@ Project → Work Unit → Role / Agent → Coding Handoff → Evidence → Revie
 
 ## A Look Inside
 
-<table>
-  <tr>
-    <td width="50%">
-      <img src="assets/firmplane-project-overview.png" alt="FIRMPLANE project overview" />
-      <br /><strong>Project Overview</strong><br />Track governed project status, attention, and the next permitted action.
-    </td>
-    <td width="50%">
-      <img src="assets/firmplane-work-units.png" alt="FIRMPLANE governed work" />
-      <br /><strong>Governed Work</strong><br />Keep work-unit state, human decisions, and runtime readiness explicit.
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <img src="assets/firmplane-approval-control.png" alt="FIRMPLANE approval control" />
-      <br /><strong>Approval Control</strong><br />Review authority, evidence, scope, and execution consequences before dispatch.
-    </td>
-    <td width="50%">
-      <img src="assets/firmplane-evidence-review.png" alt="FIRMPLANE evidence review" />
-      <br /><strong>Evidence Review</strong><br />Review returned evidence, record rework, and preserve explicit verification outcomes.
-    </td>
-  </tr>
-</table>
+<img src="assets/firmplane-formation.png" alt="FIRMPLANE project formation" />
+
+**Formation**<br />
+Structure project intent, evaluation, and owner decisions before execution.
+
+<img src="assets/firmplane-governance-artifacts.png" alt="FIRMPLANE governance artifacts" />
+
+**Governance Artifacts**<br />
+Keep project briefs, scope, requirements, features, and plans explicitly unapproved until reviewed.
+
+<img src="assets/firmplane-readiness-control.png" alt="FIRMPLANE readiness control" />
+
+**Readiness Control**<br />
+Evaluate deterministic readiness checks and preserve the owner approval boundary before dispatch.
 
 ## Working Reference Implementation
 
