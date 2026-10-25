@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/firmplane/reference-governance.schema.json",
+  "title": "FIRMPLANE Public Governance Reference Model",
+  "description": "A simplified public reference model for selected governance controls. It is not the private system schema.",
+  "type": "object",
+  "required": ["workUnit", "executionDecision"],
+  "properties": {
+    "workUnit": {
+      "type": "object",
+      "required": ["id", "state", "acceptanceCriteria", "requiredCapabilities"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "state": {
+          "enum": ["DRAFT", "READY", "RUNNING", "RESULT_PROPOSED", "VERIFIED", "COMPLETED", "BLOCKED", "STOPPED", "ESCALATED"]
+        },
+        "acceptanceCriteria": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "requiredCapabilities": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      },
+      "additionalProperties": false
+    },
+    "executionDecision": {
+      "type": "object",
+      "required": ["outcome"],
+      "properties": {
+        "outcome": { "enum": ["ACCEPTED", "BLOCKED", "STOPPED", "ESCALATED"] },
+        "reason": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["kind", "reference"],
+        "properties": {
+          "kind": { "type": "string" },
+          "reference": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
