@@ -1,6 +1,8 @@
 # FIRMPLANE AI Delivery Governance
 
-Technical documentation for FIRMPLANE as a governed AI-assisted product delivery and execution control system.
+This repository provides a standalone TypeScript reference implementation of selected execution-governance controls, including authorization checks, lifecycle transitions, execution limits, evidence requirements, and review preconditions.
+
+The reference implementation demonstrates reusable governance checks and testable state behavior. It is not a complete agent execution runtime or the internal FIRMPLANE operating system.
 
 ## Documentation
 
@@ -9,26 +11,31 @@ Technical documentation for FIRMPLANE as a governed AI-assisted product delivery
 - [Authority and control](docs/authority-and-control.md)
 - [Evidence and review](docs/evidence-and-review.md)
 
-## System flow
+## Public capabilities
 
-Project → Work Unit → Role / Agent → Coding Handoff → Evidence → Review → Status
+The public modules validate declared authority, enforce explicit work-unit transitions, bound execution attempts, validate required evidence kinds, and require a review precondition before verification. They return typed accepted or blocked decisions and do not execute tools or persist private system state.
 
 ## A Look Inside
 
-<img src="assets/firmplane-formation.png" alt="FIRMPLANE project formation" />
+<p><img src="assets/firmplane-workflow-library.png" alt="FIRMPLANE Workflow Library" /></p>
 
-**Formation**<br />
-Structure project intent, evaluation, and owner decisions before execution.
+**Workflow Library**<br />
+Explore reusable workflow templates across engineering, AI, operations, and governance.
 
-<img src="assets/firmplane-governance-artifacts.png" alt="FIRMPLANE governance artifacts" />
+<p><img src="assets/firmplane-workflow-studio.png" alt="FIRMPLANE Workflow Studio and Inspector" /></p>
 
-**Governance Artifacts**<br />
-Keep project briefs, scope, requirements, features, and plans explicitly unapproved until reviewed.
+**Workflow Studio**<br />
+Design and inspect workflow nodes, branches, capabilities, and approval requirements.
 
-<img src="assets/firmplane-readiness-control.png" alt="FIRMPLANE readiness control" />
+<p><img src="assets/firmplane-formation-readiness.png" alt="FIRMPLANE Formation readiness" /></p>
 
-**Readiness Control**<br />
-Evaluate deterministic readiness checks and preserve the owner approval boundary before dispatch.
+**Formation Readiness**<br />
+Assess project readiness, required controls, and pending decisions before execution.
+
+<p><img src="assets/firmplane-formation-artifacts.png" alt="FIRMPLANE Formation engineering artifacts" /></p>
+
+**Engineering Artifacts**<br />
+Maintain structured project briefs, requirements, scopes, and delivery plans with explicit review states.
 
 ## Working Reference Implementation
 
@@ -59,6 +66,12 @@ npm run demo
 ## Scope and Boundary
 
 This repository contains a public reference implementation of selected FIRMPLANE governance controls. It is not the complete private FIRMPLANE system and does not contain private infrastructure, proprietary operating logic, production credentials, or customer data.
+
+The implementation validates decisions and state transitions. It does not execute tools, persist canonical state, resolve identity, or provide a complete policy engine.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the local verification workflow and contribution boundaries.
 
 ## License
 

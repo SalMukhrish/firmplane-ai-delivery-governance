@@ -1,0 +1,7 @@
+Copyright (c) 2026 Saleh Mukhrish. All rights reserved for documentation, screenshots, diagrams, branding, and other non-code assets.
+
+The MIT License in LICENSE applies to the original source code in src/, tests/, and examples/, the public reference schema in schema/, and package, build, and CI configuration files.
+
+README.md, docs/, and assets/ are non-code materials and remain © 2026 Saleh Mukhrish. All rights reserved, subject to any applicable third-party notices or rights.
+
+This notice describes the intended publication boundary. It does not retroactively revoke rights granted by the MIT License. Any remaining licensing questions should be reviewed by the Owner or qualified legal counsel.

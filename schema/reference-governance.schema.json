@@ -1,6 +1,5 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.invalid/firmplane/reference-governance.schema.json",
   "title": "FIRMPLANE Public Governance Reference Model",
   "description": "A simplified public reference model for selected governance controls. It is not the private system schema.",
   "type": "object",
