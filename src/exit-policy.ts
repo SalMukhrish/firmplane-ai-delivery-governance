@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 import type { RunProgress } from "./types.js";
 
 export type ExitDecision =

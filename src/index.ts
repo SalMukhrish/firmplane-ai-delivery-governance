@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 export * from "./authority.js";
 export * from "./evidence.js";
 export * from "./exit-policy.js";

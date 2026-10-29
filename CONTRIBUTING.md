@@ -1,6 +1,6 @@
 # Contributing
 
-Contributions should remain small, deterministic, and independently useful. New behavior requires tests for accepted and blocked paths.
+Keep contributions small, deterministic, and independently useful. New behavior should include tests for accepted and blocked paths.
 
 ## Local verification
 
@@ -13,8 +13,8 @@ npm run demo
 
 ## Scope
 
-This repository accepts improvements to the public governance primitives, examples, documentation, and tests. Do not submit private FIRMPLANE policies, prompts, persistence details, infrastructure, customer data, or runtime-specific orchestration.
+Contributions should focus on the documented public governance primitives, examples, documentation, and tests. Keep changes within the published API and reference scope.
 
-Before opening a change, confirm that it introduces no credentials, local paths, private identifiers, or third-party material without compatible licensing.
+Before opening a change, confirm that it introduces no credentials, secrets, personal data, local paths, private identifiers, or third-party material without compatible licensing.
 
 © 2026 Saleh Mukhrish. All rights reserved.

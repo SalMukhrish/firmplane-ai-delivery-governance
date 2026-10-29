@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 import type { Decision, WorkUnit, WorkUnitState } from "./types.js";
 
 export type TransitionBlock = "INVALID_TRANSITION" | "FINAL_STATE_LOCKED";

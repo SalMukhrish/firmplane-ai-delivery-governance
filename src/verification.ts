@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 import type { Decision, ExecutionResult, WorkUnit } from "./types.js";
 import { validateEvidence } from "./evidence.js";
 import { transitionWorkUnit } from "./work-unit.js";

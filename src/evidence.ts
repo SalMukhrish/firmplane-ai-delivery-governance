@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 import type { Decision, ExecutionResult } from "./types.js";
 
 export type EvidenceBlock = "EVIDENCE_REQUIRED" | "EVIDENCE_INCOMPLETE";

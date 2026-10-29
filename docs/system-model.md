@@ -6,13 +6,9 @@
 
 `acceptanceCriteria` is part of the public work-unit shape and reference model; `authorizeExecution()` checks readiness, approval, capabilities, and repository availability, while evidence validation and review are separate controls.
 
-## Roles and agents
-
-## Execution context
-
 ## Reference boundary
 
-The public package does not implement persistence, identity resolution, policy composition, or runtime routing. [`transitionWorkUnit`](../src/work-unit.ts) demonstrates state integrity locally: only listed transitions are accepted and final states cannot be reopened.
+The public package keeps authority and execution decisions explicit at its API boundary. [`transitionWorkUnit`](../src/work-unit.ts) demonstrates state integrity locally: only listed transitions are accepted and final states cannot be reopened.
 
 ## Planning, authority, execution, and verification
 
@@ -25,6 +21,6 @@ The executable flow is:
 5. Require a review precondition before `VERIFIED`.
 6. Transition verified work to `COMPLETED`.
 
-The package does not dispatch tools or execute code. It validates declared decisions around an external executor.
+The package does not dispatch tools or execute code; it validates declared decisions for an integrating application.
 
 © 2026 Saleh Mukhrish. All rights reserved.

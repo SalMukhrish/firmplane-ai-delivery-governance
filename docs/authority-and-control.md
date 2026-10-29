@@ -16,6 +16,4 @@ The module returns decisions; it does not perform execution. The [demo](../examp
 
 [`verifyResult`](../src/verification.ts) rejects a false review precondition, even when evidence is complete. The public API does not establish reviewer identity or independence.
 
-## Execution context and policy
-
 © 2026 Saleh Mukhrish. All rights reserved.

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 import assert from "node:assert/strict";
 import test from "node:test";
 import {
@@ -25,7 +27,6 @@ test("authorized ready work is accepted", () => {
   });
   assert.equal(result.outcome, "ACCEPTED");
 });
-
 test("missing approval blocks execution", () => {
   const result = authorizeExecution(ready, {
     actorCapabilities: ["repository:read", "tests:run"],
@@ -118,7 +119,6 @@ test("execution limit stops a run", () => {
     { outcome: "STOPPED", code: "EXECUTION_LIMIT_REACHED" },
   );
 });
-
 test("no-progress condition escalates a run", () => {
   assert.deepEqual(
     evaluateExitPolicy({ attempts: 1, unchangedIterations: 2 }, { maxAttempts: 3, maxUnchangedIterations: 2 }),

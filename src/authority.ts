@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 import type { Decision, ExecutionContext, WorkUnit } from "./types.js";
 
 export type AuthorityBlock =
